@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 
 const Card = (props: {
   id: string;
@@ -9,9 +8,9 @@ const Card = (props: {
   return (
     <div>
       <div className='card-text'>
-        <Link to={'node/' + props.id}>
+        <a href={'node/' + props.id}>
           <h2>{props.title}</h2>
-        </Link>
+        </a>
         <div dangerouslySetInnerHTML={{__html: props.body}} />
       </div>
     </div>

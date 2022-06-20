@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `https://jedi-obmg.pantheonsite.io/`,
+        baseUrl: `http://ymain.northcentralus.cloudapp.azure.com/`,
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-axe",
+      resolve: `gatsby-plugin-react-axe`,
       options: {
         showInProduction: false,
         // Options to pass to axe-core.
@@ -41,8 +41,5 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-styled-components`,
-    "gatsby-plugin-react-helmet",
-    `gatsby-plugin-offline`,
   ],
 };

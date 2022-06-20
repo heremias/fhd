@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/addon-storysource",
     '@storybook/addon-controls',
     "@storybook/addon-essentials",
+    "storybook-addon-gatsby",
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
@@ -39,8 +40,7 @@ module.exports = {
       test: /\.(ts|tsx)$/,
       loader: require.resolve("babel-loader"),
       options: {
-        presets: [["react-app", { flow: false, typescript: true }]],
-        plugins: ["babel-plugin-styled-components"],
+        presets: [["react-app", { flow: false, typescript: true }]]
       },
     });
 
