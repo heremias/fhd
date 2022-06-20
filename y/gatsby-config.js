@@ -19,8 +19,16 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
+        skipFileDownloads: true,
         baseUrl: `http://ymain.northcentralus.cloudapp.azure.com/`,
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`
+        disallowedLinkTypes: [
+          `self`,
+          `describedby`,
+          `node--page`,
+          `paragraph--text`,
+          `paragraph--image`,
+        ],
       },
     },
     {
