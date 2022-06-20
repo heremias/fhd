@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `https://jedi-obmg.pantheonsite.io/`,
+        baseUrl: `http://ymain.northcentralus.cloudapp.azure.com/`,
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
