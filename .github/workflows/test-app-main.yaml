@@ -1,16 +1,16 @@
 # Force redeploy
 
-name: "y-app-main"
+name: "y-app-master"
 
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   # Build
   NODE_ENV: "development"
-  RUNTIME_ENV: "main"
+  RUNTIME_ENV: "master"
 
   # Container Registry
   CONTAINER_REGISTRY_HOSTNAME: ghcr.io
