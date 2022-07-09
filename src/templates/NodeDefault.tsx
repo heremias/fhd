@@ -7,7 +7,6 @@ const NodeDefault = ({ data }) => {
   return (
     <Layout>
       <h2>{node.title}</h2>
-      <div dangerouslySetInnerHTML={{__html: node.body.value}} />
     </Layout>
   )
 }
