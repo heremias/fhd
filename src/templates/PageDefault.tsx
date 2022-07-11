@@ -16,9 +16,6 @@ export const query = graphql`
     nodePage(drupal_internal__nid: {eq: $nodeId}) {
       drupal_internal__nid
       title
-      body {
-        value
-      }
     }
   }
 `
