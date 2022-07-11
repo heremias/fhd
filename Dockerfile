@@ -9,7 +9,7 @@ RUN apk update && apk add python3-dev \
                           libffi-dev
 RUN apk add --update git && rm -rf /tmp/* /var/cache/apk/*
 RUN npm install -g gatsby-cli
-# RUN npm init gatsby -ts
+# RUN npm init gatsby-ts
 
 # RUN ls
 RUN npm install
